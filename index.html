@@ -7,24 +7,26 @@
 	<nav>
 		<h1 class='pageTitle'>Basic Math Quiz</h1>
 		<p>instructions on how to complete the quiz</p>
-		<p>Question X of Y</p>
+		<p>Question <span class="currentQuestion"></span> in <span class="totalQuestions"></span></p>
 	</nav>
 	<main>
 		<h2 class='questionTitle'>Question:</h2>
-		<h5 class='question'>this will be the questions<h5>
+		<h5 id='question'>this will be the questions<h5>
 			<form class='answers'>
-				<input type="radio" name="answer" value=""><br>
-				<input type="radio" name="answer" value=""><br>
-				<input type="radio" name="answer" value=""><br>
-				<input type="radio" name="answer" value=""><br>
+				<input type="radio" name="answer" id='answer0'><label></label><br>
+				<input type="radio" name="answer" id='answer1'><label></label><br>
+				<input type="radio" name="answer" id='answer2'><label></label><br>
+				<input type="radio" name="answer" id='answer3'><label></label><br>
 			</form>
 
-		<p class='correctAnswer'>this will be the correct answer</p>
+		<p id='correctAnswer'>this will be the correct answer</p>
+		<div>
+			<button class='startButton'>Start</button>
+			<button class='submitButton'>Submit</button>
+			<button class='nextButton'>Next</button>
+		</div>
 	</main>
-	<div>
-		<button class='submitButton'>Submit</button>
-		<button class='nextQuestion'>Next</button>
-	</div>
+
 
 
 
