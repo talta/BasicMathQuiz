@@ -6,10 +6,10 @@
 <body>
 	<nav>
 		<h1 class='pageTitle'>Basic Math Quiz</h1>
-		<p>instructions on how to complete the quiz</p>
-		<p>Question <span class="currentQuestion"></span> in <span class="totalQuestions"></span></p>
+		<p>This is a basic math quiz, which will help you become a superstar in math.  Good Luck!</p>
 	</nav>
-	<main>
+	<main id='questionArea'>
+		<p>Question <span class="currentQuestion"></span> in <span class="totalQuestions"></span></p>
 		<h2 class='questionTitle'>Question:</h2>
 		<h5 id='question'>this will be the questions<h5>
 			<form class='answers'>
@@ -20,12 +20,12 @@
 			</form>
 
 		<p id='correctAnswer'>this will be the correct answer</p>
-		<div>
-			<button class='startButton'>Start</button>
-			<button class='submitButton'>Submit</button>
-			<button class='nextButton'>Next</button>
-		</div>
 	</main>
+	<div>
+		<button class='startButton'>Start</button>
+		<button class='submitButton'>Submit</button>
+		<button class='nextButton'>Next</button>
+	</div>
 
 
 
